@@ -23,11 +23,19 @@ func main() {
 
 	// Declare var
 
-	gbsExpression := viper.GetString("expression.gbs")
-	protocol := viper.GetStringSlice("protocol")
+	expressions := viper.GetStringMap("expressions")
+	protocols := viper.GetStringSlice("protocols")
+	block_heights := viper.GetStringMap("blockHeights")
 
 	// Print
 	fmt.Println("---------- Example ----------")
-	fmt.Println("gbsExpression :", gbsExpression)
-	fmt.Println("protocols :", protocol)
+	fmt.Println("expression :", expressions)
+	fmt.Println("block height :", block_heights)
+	fmt.Println("protocols :", protocols)
+	fmt.Println("")
+
+	for _, protocol := range protocols {
+		fmt.Println(protocol)
+	}
+
 }
