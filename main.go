@@ -38,4 +38,9 @@ func main() {
 		fmt.Println(protocol)
 	}
 
+	fmt.Println("")
+
+	for _, modifiedExpression := range protocols {
+		fmt.Println(expressions, modifiedExpression)
+	}
 }

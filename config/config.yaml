@@ -7,6 +7,6 @@ blockHeights:
   polkadot: "polkadot_block_height"
 
 expressions:
-  gbs: "gbs_block_height{protocol}"
-  actual: "protocol_block_height"
+  gbs: "gbs_block_height{{ .protocol }}"
+  actual: "protocol_block_height{{ .blockHeight }}"
 
