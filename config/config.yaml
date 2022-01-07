@@ -1,0 +1,11 @@
+protocol:
+  - kusama
+  - polkadot
+
+blockHeight:
+  kusama: "kusama_block_height"
+  polkadot: "polkadot_block_height"
+
+expression:
+  gbs: "gbs_block_height{protocol}"
+
